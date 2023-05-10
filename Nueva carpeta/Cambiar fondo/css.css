@@ -1,0 +1,18 @@
+button{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 20%;
+    border-bottom: turquoise;
+    border-color: rgb(0, 255, 221);
+    text-decoration-color: burlywood;
+}
+
+h1{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    text-decoration-style: solid;
+}

@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 30px;
+  }
+  
+  /*-----------------------  MENU -----------------------*/
+  
+  #contenedor_menu {
+    width: 100%;
+    height: 80px;
+    background-color: #751fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  #contenedor_hijo_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 40px;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  #logo_menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  h2 {
+    font-size: 35px;
+    color: white;
+    font-family: "Khand", sans-serif;
+  }
+  
+  h3 {
+    font-size: 55px;
+    margin-bottom: 40px;
+    padding: 10px 40px;
+    font-family: "Khand", sans-serif;
+    border-radius: 8px;
+  }
+  
+  .contenedor_paginas {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .pagina {
+    margin-left: 25px;
+    font-size: 16px;
+    color: gainsboro;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-family: "Khand", sans-serif;
+  
+  }
+  
+  /*----------  MENU TRNSICIONES ----------*/
+  .contenedor_paginas p:hover {
+    color: white;
+    transform: scale(1.1, 1.1);
+  }
+  
+  /*-----------------------  CUERPO -----------------------*/
+  
+  #cuerpo {
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  #cuerpo p {
+    font-size: 18px;
+    font-style: italic;
+    font-family: "lora", serif;
+  }
+  
+  /*------------------------------  MEDIA QUERIES  ------------------------------ */
+  @media screen and (max-width: 1250px){
+      .contenedor_paginas{
+          position: absolute;
+          top: 100px;
+          left: 30px;
+          right: 30px;
+          display: block;
+          text-align: center;
+          padding: 0px;
+          height: 0px;
+          overflow: hidden;
+          border-radius: 0px 0px 8px 8px;
+          background-color: #751fff;
+          transition: all 0.5s ease 0s;
+    }
+  
+      /*----- ICONO MENU DESPLEGABLE -----*/
+      .icono_menu_desplegable {
+         position: relative;
+         width: 49px;
+         height: 49px;
+         padding: 12px 8px;
+    }
+  
+      .desplegable_linea {
+         position: absolute;
+         width: 34px;
+         height: 3px;
+         border-radius: 5px;
+         background-color: white;
+         transition: all 0.5s ease 0s;
+    }
+  
+      .desplegable_linea_uno {
+         top: 15px;
+    }
+  
+     .desplegable_linea_dos {
+         top: 23px;
+    }
+  
+     .desplegable_linea_tres {
+         bottom: 15px;
+    }
+  
+    .desplegar_menu{
+        padding: 30px;
+        height: 10em;
+    }
+
+    /*---Submenu----*/
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    
+    .contenedor_paginas:hover .submenu {
+        display: block;
+    }
+
+    .submenu {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 2px 2px rgba(0,0,0,.1);
+    }
+    
+    .submenu a {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    
+    
+  
+  
+    /*------------------- ANIMACION DEL ICONO DEL MENU DESPLEGABLE ------------------- */
+    .rotar_linea_uno{
+      transform: translateY(8px) rotatez(45deg);
+    }
+  
+    .eliminar_linea_dos{
+      width: 0px;
+    }
+  
+    .rotar_linea_tres{
+      transform:  translateY(-8px) rotatez(-45deg);
+    }
+  }
